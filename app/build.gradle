@@ -19,6 +19,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    flavorDimensions "mode"
+
+    productFlavors {
+        def DEVELOPMENT_ENDPOINT = "https://api.rss2json.com/v1/"
+        development {
+            dimension "mode"
+            buildConfigField "String", "ENDPOINT", "\"" + DEVELOPMENT_ENDPOINT + "\""
+        }
+    }
 }
 
 dependencies {

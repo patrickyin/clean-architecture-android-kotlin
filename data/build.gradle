@@ -1,34 +1,37 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.2"
-
-
+    compileSdkVersion rootProject.ext.compile_sdk_version
     defaultConfig {
-        minSdkVersion 21
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
+        minSdkVersion rootProject.ext.mini_sdk_version
+        targetSdkVersion rootProject.ext.target_sdk_version
+        versionCode rootProject.ext.version_code
+        versionName rootProject.ext.version_name
     }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-
-    compile 'com.android.support:appcompat-v7:26.+'
-    testCompile 'junit:junit:4.12'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation "com.google.dagger:dagger:${rootProject.ext.dagger2_vesion}"
+    implementation "io.reactivex.rxjava2:rxjava:${rootProject.ext.rxjava2_version}"
+    implementation "io.reactivex.rxjava2:rxandroid:${rootProject.ext.rxandroid_version}"
+    implementation "com.squareup.retrofit2:retrofit:${rootProject.ext.retrofit2_version}"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:${rootProject.ext.retrofit2_version}"
+    implementation "com.google.code.gson:gson:${rootProject.ext.gson_version}"
+    implementation "com.squareup.retrofit2:converter-gson:${rootProject.ext.retrofit2_version}"
+    testImplementation "junit:junit:${rootProject.ext.junit_version}"
+    testImplementation "org.powermock:powermock-module-junit4:${rootProject.ext.powermock_version}"
+    testImplementation "org.powermock:powermock-api-mockito2:${rootProject.ext.powermock_version}"
+    testImplementation "org.mockito:mockito-core:${rootProject.ext.mockito_version}"
 }
