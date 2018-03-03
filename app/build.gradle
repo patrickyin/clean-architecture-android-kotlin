@@ -59,5 +59,6 @@ dependencies {
     testImplementation "org.mockito:mockito-core:${rootProject.ext.mockito_version}"
     testImplementation "org.powermock:powermock-module-junit4:${rootProject.ext.powermock_version}"
     testImplementation "org.powermock:powermock-api-mockito2:${rootProject.ext.powermock_version}"
+    androidTestImplementation "com.android.support.test:runner:${rootProject.ext.support_library_test_runner_version}"
     androidTestImplementation "com.android.support.test.espresso:espresso-core:${rootProject.ext.espresso_version}"
 }

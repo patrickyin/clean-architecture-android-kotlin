@@ -1,13 +1,13 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    ext.kotlin_version = '1.1.2-4'
+    ext.kotlin_version = '1.2.30'
     repositories {
-        maven { url 'https://maven.google.com' }
+        google()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0-alpha1'
+        classpath 'com.android.tools.build:gradle:3.0.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -17,31 +17,31 @@ buildscript {
 
 allprojects {
     repositories {
+        google()
         jcenter()
-        maven { url 'https://maven.google.com' }
-        mavenCentral()
     }
     ext {
         application_id = "io.github.eetech.cleanarchitecture"
         test_runner = "android.support.test.runner.AndroidJUnitRunner"
-        compile_sdk_version = 25
+        compile_sdk_version = 26
         mini_sdk_version = 21
         target_sdk_version = 26
         version_code = 1
         version_name = "1.0"
 
-        support_library_version = "25.3.1"
+        support_library_version = "26.1.0"
         constraint_layout_version = "1.0.2"
         retrofit2_version = "2.3.0"
-        okhttp3_version = "3.2.0"
-        dagger2_vesion = "2.10"
-        gson_version = "2.8.0"
-        rxjava2_version = "2.1.0"
-        rxandroid_version = "2.0.1"
+        okhttp3_version = "3.10.0"
+        dagger2_vesion = "2.15"
+        gson_version = "2.8.2"
+        rxjava2_version = "2.1.10"
+        rxandroid_version = "2.0.2"
         junit_version = "4.12"
-        mockito_version = "2.7.5"
-        powermock_version = "1.7.0RC4"
-        espresso_version = "2.2.2"
+        mockito_version = "2.8.9"
+        powermock_version = "1.7.1"
+        support_library_test_runner_version = "1.0.1"
+        espresso_version = "3.0.1"
     }
 }
 
