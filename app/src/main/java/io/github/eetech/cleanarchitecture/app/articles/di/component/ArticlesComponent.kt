@@ -7,7 +7,7 @@ import io.github.eetech.cleanarchitecture.app.di.component.AppComponent
 import io.github.eetech.cleanarchitecture.mvp.di.scope.PerActivity
 
 @PerActivity
-@Component(dependencies = arrayOf(AppComponent::class), modules = arrayOf(ArticlesModule::class))
+@Component(dependencies = [AppComponent::class], modules = [ArticlesModule::class])
 interface ArticlesComponent {
   fun inject(articlesActivity: ArticlesActivity)
 }

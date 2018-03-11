@@ -15,7 +15,7 @@ import javax.inject.Named
 import javax.inject.Singleton
 
 @Singleton
-@Component(modules = arrayOf(AppModule::class, IOModule::class, RepositoryModule::class, UseCaseModule::class))
+@Component(modules = [AppModule::class, IOModule::class, RepositoryModule::class, UseCaseModule::class])
 interface AppComponent {
   fun inject(app: App)
   fun getApplicationContext(): Context
