@@ -1,5 +1,7 @@
 # Android Clean Architecture - Kotlin
 
+[![Build Status](https://travis-ci.org/patrickyin/clean-architecture-android-kotlin.svg?branch=master)](https://travis-ci.org/patrickyin/clean-architecture-android-kotlin)
+
 ***This is an Android Clean Architecture base project using 100% Kotlin including Unit tests!***
 
 You could use it as the base project when you create a new Android project. This architecture optimized the Clean Architecture and MVP for the Android Kotlin project. When using this architecture, you could isolate the UI, business logic and data sources, and also making the unit test easier. It uses latest and most popular technologies e.g. Dagger2, RxJava etc.
@@ -21,13 +23,13 @@ Base `UseCase` class handles the thread of Rx chains, it puts  whole chain on IO
 
 ## Requirements &amp; configurations
 #### Requirements
-JDK 8
-Android SDK API 26
-Kotlin Gradle plugin 1.2.30 *(it will be installed automatically when this project is synced)*
+- JDK 8
+- Android SDK API 26
+- Kotlin Gradle plugin 1.2.30 *(it will be installed automatically when this project is synced)*
 
 #### Configurations
-minSdkVersion=21
-targetSdkVersion=26
+- minSdkVersion=21
+- targetSdkVersion=26
 
 ## Language
 *   [Kotlin](https://kotlinlang.org/)
