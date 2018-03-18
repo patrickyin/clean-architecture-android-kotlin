@@ -16,7 +16,7 @@ allprojects {
         jcenter()
     }
     ext {
-        application_id = "io.github.eetech.cleanarchitecture"
+        application_id = "io.github.patrickyin.cleanarchitecture"
         test_runner = "android.support.test.runner.AndroidJUnitRunner"
         compile_sdk_version = 26
         mini_sdk_version = 21
