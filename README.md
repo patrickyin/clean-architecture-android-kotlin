@@ -52,14 +52,14 @@ targetSdkVersion=26
 [S.O.L.I.D Principle](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design))
 
 
-To learn more, you can follow my blog: <https://medium.com/@pyin001>
+More articles available on my blog: <https://medium.com/@pyin001>
 
 ## TODO
 
 
 ## Bugs and Feedback
 
-For bugs, feature requests, and discussion please use  [GitHub Issues](). For general usage questions please use the  [StackOverflow](https://stackoverflow.com/questions/tagged/clean-architecture%20&%20android%20&%20kotlin).
+For bugs, feature requests, and discussion please use  [GitHub Issues](https://github.com/patrickyin/clean-architecture-android-kotlin/issues). For general usage questions please use the  [StackOverflow](https://stackoverflow.com/questions/tagged/clean-architecture%20&%20android%20&%20kotlin).
 
 ## License
 
