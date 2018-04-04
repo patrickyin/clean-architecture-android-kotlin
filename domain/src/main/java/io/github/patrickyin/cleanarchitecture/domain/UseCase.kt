@@ -5,13 +5,11 @@ import io.reactivex.Single
 import io.reactivex.SingleObserver
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
-import io.reactivex.observers.DisposableSingleObserver
 
 abstract class UseCase<T, in Params>(private val subscribeScheduler: Scheduler,
                                      private val postExecutionScheduler: Scheduler) {
 
   private val disposables: CompositeDisposable = CompositeDisposable()
-
 
   abstract fun buildUseCaseSingle(params: Params?): Single<T>
 
@@ -25,8 +23,6 @@ abstract class UseCase<T, in Params>(private val subscribeScheduler: Scheduler,
   }
 
   fun dispose() {
-    if (!disposables.isDisposed) {
-      disposables.dispose()
-    }
+    disposables.clear()
   }
 }
