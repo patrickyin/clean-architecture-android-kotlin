@@ -1,7 +1,5 @@
 package io.github.patrickyin.cleanarchitecture.app.articles
 
-import io.github.patrickyin.cleanarchitecture.app.articles.ArticlesListObserver
-import io.github.patrickyin.cleanarchitecture.app.articles.ArticlesPresenter
 import io.github.patrickyin.cleanarchitecture.domain.articles.model.Article
 import org.junit.Before
 import org.junit.Test
