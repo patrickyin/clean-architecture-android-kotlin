@@ -22,9 +22,9 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "com.google.dagger:dagger:${rootProject.ext.dagger2_vesion}"
-    implementation "com.android.support:appcompat-v7:${rootProject.ext.support_library_version}"
+    implementation "androidx.appcompat:appcompat:${rootProject.ext.androidx_version}"
     implementation "io.reactivex.rxjava2:rxjava:${rootProject.ext.rxjava2_version}"
     implementation "io.reactivex.rxjava2:rxandroid:${rootProject.ext.rxandroid_version}"
     testImplementation "junit:junit:${rootProject.ext.junit_version}"

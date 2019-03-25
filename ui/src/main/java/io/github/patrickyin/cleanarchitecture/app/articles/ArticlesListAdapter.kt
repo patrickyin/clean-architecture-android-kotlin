@@ -2,20 +2,19 @@ package io.github.patrickyin.cleanarchitecture.app.articles
 
 import android.content.Context
 import android.content.Intent
-import android.support.v4.content.ContextCompat.startActivity
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.core.content.ContextCompat.startActivity
 import io.github.patrickyin.cleanarchitecture.app.R
 import io.github.patrickyin.cleanarchitecture.domain.articles.model.Article
 import io.github.patrickyin.cleanarchitecture.domain.articles.model.linkUri
 
 
 class ArticlesListAdapter(private val context: Context, private val articles: List<Article>) :
-  RecyclerView.Adapter<ArticlesListAdapter.ViewHolder>() {
+  androidx.recyclerview.widget.RecyclerView.Adapter<ArticlesListAdapter.ViewHolder>() {
 
-  class ViewHolder(val button: Button) : RecyclerView.ViewHolder(button)
+  class ViewHolder(val button: Button) : androidx.recyclerview.widget.RecyclerView.ViewHolder(button)
 
   override fun onCreateViewHolder(parent: ViewGroup,
                                   viewType: Int): ViewHolder {
