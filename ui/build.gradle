@@ -36,10 +36,10 @@ dependencies {
     implementation project(path: ':domain')
     implementation project(path: ':mvp')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    implementation "com.android.support:appcompat-v7:${rootProject.ext.support_library_version}"
-    implementation "com.android.support:recyclerview-v7:${rootProject.ext.support_library_version}"
-    implementation "com.android.support.constraint:constraint-layout:${rootProject.ext.constraint_layout_version}"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.appcompat:appcompat:${rootProject.ext.androidx_version}"
+    implementation "androidx.recyclerview:recyclerview:${rootProject.ext.androidx_version}"
+    implementation "androidx.constraintlayout:constraintlayout:${rootProject.ext.constraint_layout_version}"
 
     implementation "com.squareup.retrofit2:retrofit:${rootProject.ext.retrofit2_version}"
     implementation "com.squareup.retrofit2:adapter-rxjava2:${rootProject.ext.retrofit2_version}"
@@ -59,6 +59,6 @@ dependencies {
     testImplementation "org.mockito:mockito-core:${rootProject.ext.mockito_version}"
     testImplementation "org.powermock:powermock-module-junit4:${rootProject.ext.powermock_version}"
     testImplementation "org.powermock:powermock-api-mockito2:${rootProject.ext.powermock_version}"
-    androidTestImplementation "com.android.support.test:runner:${rootProject.ext.support_library_test_runner_version}"
-    androidTestImplementation "com.android.support.test.espresso:espresso-core:${rootProject.ext.espresso_version}"
+    androidTestImplementation "androidx.test:runner:${rootProject.ext.test_runner_version}"
+    androidTestImplementation "androidx.test.espresso:espresso-core:${rootProject.ext.espresso_version}"
 }

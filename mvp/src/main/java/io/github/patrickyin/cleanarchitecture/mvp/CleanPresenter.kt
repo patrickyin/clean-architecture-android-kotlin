@@ -1,9 +1,5 @@
 package io.github.patrickyin.cleanarchitecture.mvp
 
-import android.support.v4.app.Fragment
-import android.support.v7.app.AppCompatActivity
-import io.reactivex.disposables.CompositeDisposable
-
 abstract class CleanPresenter<out T> {
   private var view: T? = null
 

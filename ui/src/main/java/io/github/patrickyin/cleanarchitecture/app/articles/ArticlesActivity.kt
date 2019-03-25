@@ -1,6 +1,5 @@
 package io.github.patrickyin.cleanarchitecture.app.articles
 
-import android.support.v7.widget.LinearLayoutManager
 import io.github.patrickyin.cleanarchitecture.app.App
 import io.github.patrickyin.cleanarchitecture.app.R
 import io.github.patrickyin.cleanarchitecture.app.articles.di.component.DaggerArticlesComponent
@@ -21,7 +20,7 @@ class ArticlesActivity : CleanActivity<ArticlesPresenter>(), ArticlesView {
   override fun initialiseView() {
     articles_list_recycler_view.apply {
       setHasFixedSize(true)
-      layoutManager = LinearLayoutManager(this@ArticlesActivity)
+      layoutManager = androidx.recyclerview.widget.LinearLayoutManager(this@ArticlesActivity)
     }
   }
 
