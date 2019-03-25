@@ -35,7 +35,7 @@ Base `UseCase` class handles the thread of Rx chains, it puts  whole chain on IO
 *   [Kotlin](https://kotlinlang.org/)
 
 ## Libraries
-*   [Android Support Libraries](https://developer.android.com/topic/libraries/support-library/index.html)
+*   [AndroidX](https://developer.android.com/jetpack/androidx)
 *   [Dagger 2](https://google.github.io/dagger/)
 *   [RxJava2](https://github.com/ReactiveX/RxJava/wiki/What's-different-in-2.0)
 *   [RxAndroid](https://github.com/ReactiveX/RxAndroid)
