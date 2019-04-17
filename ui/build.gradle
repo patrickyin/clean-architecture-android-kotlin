@@ -4,7 +4,13 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 android {
+    compileOptions {
+        targetCompatibility = "8"
+        sourceCompatibility = "8"
+    }
+    
     compileSdkVersion rootProject.ext.compile_sdk_version
+
     defaultConfig {
         applicationId "${rootProject.ext.application_id}"
         minSdkVersion rootProject.ext.mini_sdk_version
@@ -13,6 +19,7 @@ android {
         versionName rootProject.ext.version_name
         testInstrumentationRunner rootProject.ext.test_runner
     }
+
     buildTypes {
         release {
             minifyEnabled false

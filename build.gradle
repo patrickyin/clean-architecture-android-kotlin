@@ -27,7 +27,7 @@ allprojects {
         androidx_version = '1.1.0-alpha03'
         constraint_layout_version = '1.1.3'
         retrofit2_version = "2.5.0"
-        okhttp3_version = "3.14.0"
+        okhttp3_version = "3.14.1"
         dagger2_vesion = "2.21"
         gson_version = "2.8.5"
         rxjava2_version = "2.2.7"
