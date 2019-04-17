@@ -2,13 +2,13 @@ language: android
 
 android:
   components:
-    - build-tools-26.0.2
-    - android-26
+    - build-tools-28.0.3
+    - android-28
     - extra-google-google_play_services
     - extra-google-m2repository
     - extra-android-m2repository
     - extra-android-support
-    - addon-google_apis-google-26
+    - addon-google_apis-google-28
 
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
